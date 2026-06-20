@@ -191,17 +191,21 @@ no ads.
 14. SCREENSHOTS — REQUIRED SIZES
 --------------------------------------------------------------------------------
 
-Upload at least the largest iPhone size. Capture with Cmd+S in the simulator.
+Leap37 is a Universal app, so upload BOTH iPhone and iPad screenshots. Capture
+with Cmd+S in the simulator.
 
 iPhone 6.9"   1320 x 2868 px   iPhone 16 Pro Max     REQUIRED (3–10 images)
 iPhone 6.7"   1290 x 2796 px   iPhone 15 Pro Max     accepted alternative
+iPad 13"      2064 x 2752 px   iPad Pro 13"          REQUIRED for Universal apps
+              (2048 x 2732 px, iPad Pro 12.9", is also accepted)
 
 Suggested shots:
   1. Calculator in count mode with the look/leap split bar.
   2. Calculator in time mode (e.g. 20 years → explore 7.4).
   3. Templates list.
   4. A decision being tracked, showing the "leap now" guidance.
-  5. Learn — "Why 37%?".
+  5. Learn — a topic expanded ("Why 37%?") showing the deeper detail + sources.
+  6. Account — "Save your decisions": sign in to back up and sync across devices.
 
 
 ================================================================================
