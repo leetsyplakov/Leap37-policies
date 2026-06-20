@@ -1,6 +1,6 @@
 ================================================================================
 LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v1.2)
-Last edited 2026-06-19
+Last edited 2026-06-20
 ================================================================================
 
 Paste each section into the matching field in App Store Connect.
