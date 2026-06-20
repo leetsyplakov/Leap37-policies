@@ -12,5 +12,7 @@ Published via GitHub Pages at
 Hand-written HTML with a tiny CSS file. No Jekyll, no tracking, no analytics.
 Light/dark mode follows the visitor's system preference.
 
-Leap37 itself collects no data, makes no network connections, and stores
-everything on-device.
+Leap37 works fully offline and stores your decisions on-device. Signing in is
+optional; if you do, your decisions plus basic account details (name, email,
+account id) and any feedback are stored on our server only to sync across your
+devices. No analytics, no ads, no tracking. See the Privacy Policy for details.
