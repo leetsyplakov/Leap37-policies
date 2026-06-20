@@ -1,5 +1,5 @@
 ================================================================================
-LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v2.0)
+LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v1.2)
 Last edited 2026-06-19
 ================================================================================
 
@@ -156,18 +156,18 @@ upload time.
 
 
 --------------------------------------------------------------------------------
-12. WHAT'S NEW IN THIS VERSION  (Version 2.0)
+12. WHAT'S NEW IN THIS VERSION  (Version 1.2)
 --------------------------------------------------------------------------------
 
-Version 2.0
+Version 1.2
 
-• NEW: Optional sign-in with Apple or Google to back up your decisions and sync
-  them across your iPhone and iPad.
+• NEW: Sign in with Apple or Google to back up your decisions and sync them
+  across your iPhone and iPad — totally optional; everything still works without
+  an account.
 • NEW: Send feedback and suggestions to the developer right from your account.
-• NEW: Full account control — delete your account and all cloud data anytime,
-  in-app.
-• Improved Learn section: each topic now expands with deeper, fact-checked
-  explanations and sources.
+• More in Learn: every topic now expands into deeper, fact-checked detail, with
+  sources.
+• Account control — delete your account and all cloud data anytime, in-app.
 • Still offline-first. No ads, no tracking.
 
 
