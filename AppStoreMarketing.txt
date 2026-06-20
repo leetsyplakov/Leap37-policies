@@ -1,0 +1,337 @@
+================================================================================
+LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v2.0)
+Last edited 2026-06-19
+================================================================================
+
+Paste each section into the matching field in App Store Connect.
+Lengths follow Apple's limits.
+
+
+--------------------------------------------------------------------------------
+1.  APP NAME (max 30 characters)
+--------------------------------------------------------------------------------
+
+Leap37
+
+
+--------------------------------------------------------------------------------
+2.  SUBTITLE (max 30 characters)
+--------------------------------------------------------------------------------
+
+Know when to stop & choose
+
+
+--------------------------------------------------------------------------------
+3.  PROMOTIONAL TEXT (max 170 characters — updatable without re-review)
+--------------------------------------------------------------------------------
+
+Apartment, job, car, or date? Leap37 uses the 37% rule to tell you exactly when
+to stop looking and commit — by count or by time. Works offline; sign in to sync.
+
+
+--------------------------------------------------------------------------------
+4.  DESCRIPTION (max 4000 characters)
+--------------------------------------------------------------------------------
+
+Some choices come at you one at a time — apartments, job candidates, used cars,
+even dates — and once you pass on one, it's usually gone. Search too little and
+you settle; search too long and the best option slips away. Leap37 solves this
+with a result from mathematics called the 37% rule (the "secretary problem").
+
+THE RULE, MADE SIMPLE
+
+Look at the first ~37% of your options without committing — just learn the
+field. Then leap: commit to the first option that beats everything you saw while
+looking. That strategy gives you the mathematically best shot — about a 37%
+chance — at landing the single best option.
+
+WHAT'S INSIDE
+
+• Calculator — Enter how many options you'll see, or a time horizon (days,
+  weeks, months, years), and instantly get your look/leap split.
+• Decisions — Track real options as you go. Leap37 sets your benchmark from the
+  looking phase and tells you the moment you should commit.
+• Templates — 25+ ready-made scenarios across home, career, business, dating,
+  shopping, travel, and services. Tap one to start in seconds.
+• Time horizons — Some decisions play out over years, not items. "Dating for 20
+  years" → explore for the first ~7.4 years, then commit. Leap37 does the math.
+• Learn — Plain-English explanation of why 37%, when it applies, and how the
+  same idea works for any variable: time, number of options, money spent,
+  distance traveled, interviews, deals, and more.
+• Optional cloud sync — Sign in with Apple or Google to back up your decisions
+  and keep them in sync across your iPhone and iPad. Totally optional.
+
+PRIVACY FIRST
+
+Leap37 is offline-first: it works fully without an account and keeps your
+decisions on your device. Signing in (Apple or Google) is optional — if you do,
+your decisions sync across your devices and back up to the cloud, and you can
+delete your account and that data anytime. No ads, no analytics, no tracking,
+ever. Read the full Privacy Policy at
+https://leetsyplakov.github.io/Leap37-policies/privacy.html.
+
+Leap37 is an independent app and offers general decision-making guidance only —
+not professional, financial, legal, or medical advice.
+
+
+--------------------------------------------------------------------------------
+5.  KEYWORDS (max 100 characters, comma-separated, no spaces after commas)
+--------------------------------------------------------------------------------
+
+37%,decision,optimal stopping,secretary problem,choose,apartment,hiring,dating,
+calculator,when to stop
+
+
+--------------------------------------------------------------------------------
+6.  CATEGORY
+--------------------------------------------------------------------------------
+
+Primary:   Productivity
+Secondary: Lifestyle
+
+(Reference or Utilities are also reasonable alternatives.)
+
+
+--------------------------------------------------------------------------------
+7.  URLs
+--------------------------------------------------------------------------------
+
+Support URL          https://github.com/leetsyplakov/Leap37-policies
+Marketing URL        https://leetsyplakov.github.io/Leap37-policies/   (optional)
+Privacy Policy URL   https://leetsyplakov.github.io/Leap37-policies/privacy.html
+
+
+--------------------------------------------------------------------------------
+8.  COPYRIGHT
+--------------------------------------------------------------------------------
+
+© 2026 Andrey Lee Tsyplakov
+
+
+--------------------------------------------------------------------------------
+9.  AGE RATING
+--------------------------------------------------------------------------------
+
+All Ages (4+). Answer "None" to every age-rating question — no objectionable
+content, no unrestricted web access. Note: the app does accept user-written
+feedback messages (sent only to the developer, not shown to other users), so
+there is no public user-generated content to moderate.
+
+
+--------------------------------------------------------------------------------
+10. APP PRIVACY (App Store Connect → App Privacy)
+--------------------------------------------------------------------------------
+
+When prompted "Does this app collect any data?" answer YES. (Users who never sign
+in have nothing collected, but App Privacy must reflect what the app *can*
+collect via the optional account.)
+
+Declare these data types. For EACH: Linked to the user = YES, Used for Tracking
+= NO, Purpose = App Functionality.
+
+  • Contact Info → Name               (from Apple / Google sign-in)
+  • Contact Info → Email Address      (from Apple / Google sign-in)
+  • Identifiers → User ID             (account identifier)
+  • User Content → Other User Content (your saved decisions + feedback messages)
+
+Do NOT mark any data as "Used for Tracking", and add no tracking domains.
+
+Privacy Policy URL (required):
+  https://leetsyplakov.github.io/Leap37-policies/privacy.html
+
+The bundled PrivacyInfo.xcprivacy manifest matches the above: NSPrivacyTracking
+false; collected types Name, Email Address, User ID, and Other User Content (each
+linked, not for tracking, App Functionality); plus one required-reason API —
+UserDefaults (reason CA92.1), used to save decisions locally.
+
+
+--------------------------------------------------------------------------------
+11. EXPORT COMPLIANCE
+--------------------------------------------------------------------------------
+
+The app uses only Apple's standard OS-level HTTPS (TLS) for sign-in and cloud
+sync, and no proprietary or otherwise non-exempt encryption.
+ITSAppUsesNonExemptEncryption is set to NO in the build, so you won't be asked at
+upload time.
+
+
+--------------------------------------------------------------------------------
+12. WHAT'S NEW IN THIS VERSION  (Version 2.0)
+--------------------------------------------------------------------------------
+
+Version 2.0
+
+• NEW: Optional sign-in with Apple or Google to back up your decisions and sync
+  them across your iPhone and iPad.
+• NEW: Send feedback and suggestions to the developer right from your account.
+• NEW: Full account control — delete your account and all cloud data anytime,
+  in-app.
+• Improved Learn section: each topic now expands with deeper, fact-checked
+  explanations and sources.
+• Still offline-first. No ads, no tracking.
+
+
+--------------------------------------------------------------------------------
+13. APP REVIEW — DEMO INFO
+--------------------------------------------------------------------------------
+
+Sign-in Required = No. Reviewers can launch the app and use every feature
+immediately without an account — the Calculator, Templates, decision tracking,
+and Learn all work fully offline.
+
+Sign-in is OPTIONAL and only adds cloud backup/sync of your decisions. To test
+it, tap the account icon on the Decisions tab and choose "Sign in with Apple"
+(simplest — no credentials needed) or "Continue with Google". A signed-in user
+can also send feedback to the developer and permanently delete their account and
+cloud data in-app (Account → Delete account). There are no in-app purchases and
+no ads.
+
+
+--------------------------------------------------------------------------------
+14. SCREENSHOTS — REQUIRED SIZES
+--------------------------------------------------------------------------------
+
+Upload at least the largest iPhone size. Capture with Cmd+S in the simulator.
+
+iPhone 6.9"   1320 x 2868 px   iPhone 16 Pro Max     REQUIRED (3–10 images)
+iPhone 6.7"   1290 x 2796 px   iPhone 15 Pro Max     accepted alternative
+
+Suggested shots:
+  1. Calculator in count mode with the look/leap split bar.
+  2. Calculator in time mode (e.g. 20 years → explore 7.4).
+  3. Templates list.
+  4. A decision being tracked, showing the "leap now" guidance.
+  5. Learn — "Why 37%?".
+
+
+================================================================================
+MARKETING MATERIALS
+================================================================================
+
+
+--------------------------------------------------------------------------------
+15. ONE-LINER / ELEVATOR PITCH
+--------------------------------------------------------------------------------
+
+Leap37 tells you the exact moment to stop looking and commit — whether you're
+choosing an apartment, a job, a car, or a partner — using a proven rule from
+mathematics.
+
+(Shorter:) Stop second-guessing big choices. Leap37 does the math on when to commit.
+
+
+--------------------------------------------------------------------------------
+16. TAGLINES (pick per channel)
+--------------------------------------------------------------------------------
+
+• Look, then leap.
+• Know when to stop and choose.
+• The 37% rule, in your pocket.
+• Stop searching. Start deciding.
+• Settle smart, not early.
+• The math of the perfect choice.
+
+
+--------------------------------------------------------------------------------
+17. SHORT FEATURE BULLETS (web / store / ads)
+--------------------------------------------------------------------------------
+
+• Calculator for count- and time-based decisions.
+• Tells you the moment to commit while you track real options.
+• 25+ ready-made templates: apartments, hiring, dating, cars, deals, and more.
+• Time horizons: "dating for 20 years" → explore ~7.4, then commit.
+• Plain-English Learn section on why 37% works.
+• Offline-first; optional free sign-in syncs decisions across devices. No ads, no tracking.
+
+
+--------------------------------------------------------------------------------
+18. APP PREVIEW / PROMO PARAGRAPH (Product Hunt, blog, newsletter)
+--------------------------------------------------------------------------------
+
+We all face choices that come one at a time — apartments that get rented the
+same day, job offers with deadlines, dates you can't un-pass. Search too little
+and you settle; search too long and the best option is gone. There's actually a
+mathematical answer to this, called the 37% rule (or "secretary problem"):
+explore the first 37% of your options to learn the field, then commit to the
+first one that beats them all.
+
+Leap37 turns that theorem into a simple app. Punch in how many options you'll
+see — or a time horizon like "6 months" or "20 years" — and it shows your
+look/leap split instantly. Track real options as you go and it tells you the
+exact moment to stop and commit. It ships with 25+ templates for the decisions
+people actually agonize over. It's offline-first — no ads, no tracking — with an
+optional free sign-in (Apple or Google) that backs up and syncs your decisions
+across your devices.
+
+
+--------------------------------------------------------------------------------
+19. SOCIAL POSTS
+--------------------------------------------------------------------------------
+
+X / Twitter (launch):
+  There's a math rule for when to stop looking and just choose — apartments,
+  jobs, dates, anything. It's called the 37% rule.
+  I built it into an iOS app: Leap37. Tells you the exact moment to commit.
+  Offline-first, no tracking; optional sync across devices. [link]
+
+X / Twitter (hook):
+  Dating for ~20 years? The math says: explore for the first 7.4, then commit
+  to the first person better than everyone before. That's the 37% rule — and
+  it's the whole idea behind Leap37. [link]
+
+Instagram / threads caption:
+  Stop second-guessing. 🧠 Leap37 uses the 37% rule to tell you when to stop
+  looking and commit — for apartments, jobs, cars, even dating. Look, then leap.
+  Free on the App Store. #decisionmaking #productivity #37percent
+
+Reddit (r/iosapps style, no hype):
+  I made Leap37, a small offline-first app that applies the "secretary problem" /
+  37% rule to everyday choices. You enter how many options you'll see (or a
+  time window), and it tells you when to stop exploring and commit. It has
+  templates for apartment hunting, hiring, dating, etc. Works fully offline; an
+  optional sign-in (Apple/Google) syncs your decisions across devices. No ads,
+  no analytics. Feedback welcome.
+
+
+--------------------------------------------------------------------------------
+20. PRESS / BLURB (one paragraph for a feature)
+--------------------------------------------------------------------------------
+
+Leap37 is a new iOS app that applies optimal-stopping theory — the famous
+"37% rule" — to the choices people make in sequence, from apartment hunting to
+hiring to dating. The app calculates when a user should stop exploring options
+and commit to the best one seen so far, supports both count-based and
+time-based decisions, and ships with 25+ scenario templates. Built by
+independent developer Andrey Lee Tsyplakov, Leap37 is offline-first — with no
+advertising or tracking — and adds an optional free account to sync decisions
+across a user's devices.
+
+
+--------------------------------------------------------------------------------
+21. TARGET AUDIENCE
+--------------------------------------------------------------------------------
+
+• Renters / home buyers comparing places in a fast market.
+• Job seekers and hiring managers working through candidates or offers.
+• Shoppers researching cars, laptops, furniture, etc.
+• People dating with intent ("when do I settle down?").
+• Founders/investors evaluating ideas, deals, suppliers.
+• Fans of decision science, productivity, and "useful math" apps.
+
+
+--------------------------------------------------------------------------------
+22. ASO NOTES
+--------------------------------------------------------------------------------
+
+• High-intent search terms: "decision maker", "when to stop", "37 percent rule",
+  "secretary problem", "optimal stopping", "choose".
+• Lifestyle terms broaden reach: "apartment", "dating", "hiring".
+• Keep the name field as just "Leap37"; let the subtitle carry "decide / choose".
+• Localize subtitle + keywords later if you expand beyond English.
+• Refresh Promotional Text (no review needed) around seasonal hooks
+  (e.g. "moving season", "hiring season", "New Year decisions").
+
+
+--------------------------------------------------------------------------------
+END OF FILE
+--------------------------------------------------------------------------------
