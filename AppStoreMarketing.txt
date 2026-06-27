@@ -1,6 +1,6 @@
 ================================================================================
-LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v1.2)
-Last edited 2026-06-20
+LEAP37 — APP STORE CONNECT SUBMISSION KIT  (v1.3)
+Last edited 2026-06-26
 ================================================================================
 
 Paste each section into the matching field in App Store Connect.
@@ -63,12 +63,12 @@ WHAT'S INSIDE
 
 PRIVACY FIRST
 
-Leap37 is offline-first: it works fully without an account and keeps your
-decisions on your device. Signing in (Apple or Google) is optional — if you do,
-your decisions sync across your devices and back up to the cloud, and you can
-delete your account and that data anytime. No ads, no analytics, no tracking,
-ever. Read the full Privacy Policy at
-https://leetsyplakov.github.io/Leap37-policies/privacy.html.
+Leap37 works without an account and keeps your decisions on your device. Signing
+in (Apple or Google) is optional — if you do, your decisions sync across your
+devices and back up to the cloud, and you can delete your account and that data
+anytime. Leap37 is free and supported by non-personalized ads (Google AdMob); we
+don't use other analytics and don't track you across other apps. Read the full
+Privacy Policy at https://leetsyplakov.github.io/Leap37-policies/privacy.html.
 
 Leap37 is an independent app and offers general decision-making guidance only —
 not professional, financial, legal, or medical advice.
@@ -117,32 +117,58 @@ content, no unrestricted web access. Note: the app does accept user-written
 feedback messages (sent only to the developer, not shown to other users), so
 there is no public user-generated content to moderate.
 
+The app shows third-party (AdMob) ads. To keep 4+ accurate, set the app's MAX AD
+CONTENT RATING to "G" in the AdMob console so served ads stay family-friendly.
+With that set, 4+ remains correct.
+
 
 --------------------------------------------------------------------------------
 10. APP PRIVACY (App Store Connect → App Privacy)
 --------------------------------------------------------------------------------
 
-When prompted "Does this app collect any data?" answer YES. (Users who never sign
-in have nothing collected, but App Privacy must reflect what the app *can*
-collect via the optional account.)
+When prompted "Does this app collect any data?" answer YES. (App Privacy must
+reflect what the app *can* collect — via the optional account AND via ads, which
+are shown to everyone.)
 
-Declare these data types. For EACH: Linked to the user = YES, Used for Tracking
-= NO, Purpose = App Functionality.
+A) FIRST-PARTY (optional account). For EACH: Linked to the user = YES, Used for
+   Tracking = NO, Purpose = App Functionality.
 
   • Contact Info → Name               (from Apple / Google sign-in)
   • Contact Info → Email Address      (from Apple / Google sign-in)
   • Identifiers → User ID             (account identifier)
   • User Content → Other User Content (your saved decisions + feedback messages)
 
+B) ADVERTISING (Google AdMob — collected for everyone). Used for Tracking = NO
+   (we request non-personalized ads, show no ATT prompt, and don't use the IDFA
+   to track across apps):
+
+  • Identifiers → Device ID    Purpose: Third-Party Advertising + App
+                               Functionality. Linked = NO.
+  • Usage Data → Advertising Data       Purpose: Third-Party Advertising.
+                                        Linked = NO.
+  • Usage Data → Product Interaction    Purpose: Third-Party Advertising (ad
+                                        taps/views). Linked = NO.
+  • Diagnostics → Crash Data, Performance Data  Purpose: App Functionality
+                                        (AdMob SDK). Linked = NO.
+
 Do NOT mark any data as "Used for Tracking", and add no tracking domains.
+
+Resulting nutrition label:
+  • Data Used to Track You → EMPTY
+  • Data Linked to You     → Name, Email, User ID, Other User Content
+  • Data Not Linked to You → Device ID, Advertising Data, Product Interaction,
+                             Crash Data, Performance Data
 
 Privacy Policy URL (required):
   https://leetsyplakov.github.io/Leap37-policies/privacy.html
 
-The bundled PrivacyInfo.xcprivacy manifest matches the above: NSPrivacyTracking
+The app's bundled PrivacyInfo.xcprivacy covers the first-party items: NSPrivacyTracking
 false; collected types Name, Email Address, User ID, and Other User Content (each
 linked, not for tracking, App Functionality); plus one required-reason API —
-UserDefaults (reason CA92.1), used to save decisions locally.
+UserDefaults (reason CA92.1), used to save decisions locally. The Google Mobile
+Ads SDK ships its OWN privacy manifest (declaring the ad data above and its
+required-reason APIs), which Apple aggregates automatically at upload — no change
+to our manifest is needed.
 
 
 --------------------------------------------------------------------------------
@@ -156,19 +182,19 @@ upload time.
 
 
 --------------------------------------------------------------------------------
-12. WHAT'S NEW IN THIS VERSION  (Version 1.2)
+12. WHAT'S NEW IN THIS VERSION  (Version 1.3)
 --------------------------------------------------------------------------------
 
-Version 1.2
+Version 1.3
 
-• NEW: Sign in with Apple or Google to back up your decisions and sync them
-  across your iPhone and iPad — totally optional; everything still works without
-  an account.
-• NEW: Send feedback and suggestions to the developer right from your account.
-• More in Learn: every topic now expands into deeper, fact-checked detail, with
-  sources.
-• Account control — delete your account and all cloud data anytime, in-app.
-• Still offline-first. No ads, no tracking.
+• Leap37 is now free and ad-supported, which keeps development going. Ads are
+  non-personalized — we don't track you across other apps.
+• Everything you rely on is unchanged: the calculator, templates, decision
+  tracking, Learn, and optional cloud sync all work exactly as before.
+• Performance and stability improvements.
+
+(Prior — Version 1.2: optional Sign in with Apple/Google for cloud backup & sync,
+in-app feedback, expanded Learn with sources, and in-app account deletion.)
 
 
 --------------------------------------------------------------------------------
@@ -183,8 +209,18 @@ Sign-in is OPTIONAL and only adds cloud backup/sync of your decisions. To test
 it, tap the account icon on the Decisions tab and choose "Sign in with Apple"
 (simplest — no credentials needed) or "Continue with Google". A signed-in user
 can also send feedback to the developer and permanently delete their account and
-cloud data in-app (Account → Delete account). There are no in-app purchases and
-no ads.
+cloud data in-app (Account → Delete account).
+
+ADS: The app shows Google AdMob ads — a banner pinned above the tab bar on all
+four tabs, plus a standard full-screen (often video) interstitial when you tap
+"Create" on a new decision (user-dismissible). No rewarded ads, no in-app
+purchases. Ads are non-personalized; there is no App Tracking Transparency prompt.
+
+  AdMob app id ..... ca-app-pub-6636500656005113~4482923065
+  Banner unit ...... ca-app-pub-6636500656005113/4664097910
+  Interstitial unit  ca-app-pub-6636500656005113/1769129819
+  app-ads.txt (LIVE at https://leetsyplakov.github.io/app-ads.txt):
+    google.com, pub-6636500656005113, DIRECT, f08c47fec0942fa0
 
 
 --------------------------------------------------------------------------------
@@ -245,7 +281,7 @@ mathematics.
 • 25+ ready-made templates: apartments, hiring, dating, cars, deals, and more.
 • Time horizons: "dating for 20 years" → explore ~7.4, then commit.
 • Plain-English Learn section on why 37% works.
-• Offline-first; optional free sign-in syncs decisions across devices. No ads, no tracking.
+• Free, ad-supported; optional sign-in syncs decisions across devices. Non-personalized ads, no cross-app tracking.
 
 
 --------------------------------------------------------------------------------
@@ -263,9 +299,9 @@ Leap37 turns that theorem into a simple app. Punch in how many options you'll
 see — or a time horizon like "6 months" or "20 years" — and it shows your
 look/leap split instantly. Track real options as you go and it tells you the
 exact moment to stop and commit. It ships with 25+ templates for the decisions
-people actually agonize over. It's offline-first — no ads, no tracking — with an
-optional free sign-in (Apple or Google) that backs up and syncs your decisions
-across your devices.
+people actually agonize over. It's free and ad-supported — non-personalized ads,
+no cross-app tracking — with an optional free sign-in (Apple or Google) that backs
+up and syncs your decisions across your devices.
 
 
 --------------------------------------------------------------------------------
@@ -289,12 +325,12 @@ Instagram / threads caption:
   Free on the App Store. #decisionmaking #productivity #37percent
 
 Reddit (r/iosapps style, no hype):
-  I made Leap37, a small offline-first app that applies the "secretary problem" /
-  37% rule to everyday choices. You enter how many options you'll see (or a
-  time window), and it tells you when to stop exploring and commit. It has
-  templates for apartment hunting, hiring, dating, etc. Works fully offline; an
-  optional sign-in (Apple/Google) syncs your decisions across devices. No ads,
-  no analytics. Feedback welcome.
+  I made Leap37, a small app that applies the "secretary problem" / 37% rule to
+  everyday choices. You enter how many options you'll see (or a time window), and
+  it tells you when to stop exploring and commit. It has templates for apartment
+  hunting, hiring, dating, etc. The decision tools work offline; an optional
+  sign-in (Apple/Google) syncs your decisions across devices. Free and
+  ad-supported (non-personalized ads), no cross-app tracking. Feedback welcome.
 
 
 --------------------------------------------------------------------------------
@@ -306,9 +342,9 @@ Leap37 is a new iOS app that applies optimal-stopping theory — the famous
 hiring to dating. The app calculates when a user should stop exploring options
 and commit to the best one seen so far, supports both count-based and
 time-based decisions, and ships with 25+ scenario templates. Built by
-independent developer Andrey Lee Tsyplakov, Leap37 is offline-first — with no
-advertising or tracking — and adds an optional free account to sync decisions
-across a user's devices.
+independent developer Andrey Lee Tsyplakov, Leap37 is free and ad-supported —
+with non-personalized ads and no cross-app tracking — and adds an optional free
+account to sync decisions across a user's devices.
 
 
 --------------------------------------------------------------------------------
